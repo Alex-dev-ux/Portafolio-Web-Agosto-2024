@@ -1,4 +1,5 @@
-import Header from '../components/Header'
-import About from '../components/About'
-import Portfolio from '../components/Portfolio'
-import Contact from '../components/Contact'
+import Home from '../components/Home'
+
+export default function HomePage() {
+  return <Home />;
+}

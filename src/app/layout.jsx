@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../styles/global.css';
 import '../styles/responsive.css';
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
         </div>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   )

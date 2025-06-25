@@ -10,10 +10,10 @@ const About = () => {
       <div className="about-content">
         <h2>About <span>Me</span></h2>
         <p>
-          Soy Alex Ramirez, un chico de la ciudad de Medellin, residente natural del Municipio de Sabaneta - Antioquia, ubicado en el área metropolitana del Valle de Aburrá. Tengo 32 años de edad.
+          Soy Alex Ramirez, un aprendiz entusiasta del mundo de la tecnología y la programación. Originario de Medellín, Colombia, nací en marzo de 1992 y actualmente estoy dando mis primeros pasos en este fascinante campo del desarrollo web.
         </p>
         <p>
-          Una persona que hasta hace poco tiempo desempeñaba un rol como independiente en el comercio urbano, con habilidad y experiencia en las áreas de seguridad y conducción de vehículos automotores.
+          Mi camino en la programación está apenas comenzando. Como aprendiz nato, reconozco que mi conocimiento es muy básico, casi desde cero, pero mi determinación y pasión por aprender me impulsan cada día. Actualmente tengo el privilegio de ser parte de Beu Inc., empresa que me ha acogido y brindado la invaluable oportunidad de aprender y crecer en el área de QA Testing, permitiéndome desarrollar habilidades prácticas mientras continúo mi formación de manera Autodidacta en desarrollo web.
         </p>
         <a href="#" className="btn" aria-label="Leer más sobre Alex Ramirez">Read More</a>
       </div>

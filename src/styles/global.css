@@ -263,6 +263,7 @@ header {
     color: black;
     margin-top: 0px;
     margin-top: 0px;
+    margin-top: 0px;
     padding-bottom: 72px;
     padding-top: 72px;
   }
@@ -277,6 +278,7 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 12rem;
   }
 
   .portfolio-box {
@@ -319,7 +321,7 @@ header {
   }
 
   .portfolio-info p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.7;
   }

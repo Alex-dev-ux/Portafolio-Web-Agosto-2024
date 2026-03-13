@@ -1,4 +1,4 @@
-// File: /Users/alexis/Documents/Proyectos-Personales/Portafolio-Web-Agosto-2024/src/app/layout.jsx
+// File: /Users/alexis/Documents/proyectos_personales/Portafolio-Web-Agosto-2024/src/app/layout.jsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

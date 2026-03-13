@@ -1,6 +1,258 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Mobile first: teléfonos y pantallas pequeñas */
+@media (max-width: 599px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --bg-color: #080808;
+    --second-bg-color: #000c10;
+    --text-color: white;
+    --main-color: #0ec3f0;
+  }
+
+  html {
+    font-size: 55%;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding-top: 5rem;
+  }
+
+  section {
+    min-height: auto;
+    padding: 6rem 2rem 4rem;
+  }
+
+  span {
+    color: var(--main-color);
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(8, 8, 8, 0.96);
+    backdrop-filter: blur(10px);
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .nav-links a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  /* Home */
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+  }
+
+  .home-content p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 32rem;
+  }
+
+  .home-img img {
+    width: 60vw;
+    max-width: 260px;
+    border-radius: 14%;
+    box-shadow: 0 0 18px var(--main-color);
+  }
+
+  .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    margin: 1.6rem 0.4rem 1rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    border-radius: 999px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: var(--main-color);
+    color: #000;
+    border: none;
+    box-shadow: 0 0 18px rgba(14, 195, 240, 0.4);
+  }
+
+  .btn-group a:nth-of-type(2) {
+    background: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+  }
+
+  /* About */
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about img {
+    width: 60vw;
+    max-width: 260px;
+    border-radius: 14%;
+    box-shadow: 0 0 16px var(--main-color);
+  }
+
+  .about h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-content p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    background-color: var(--bg-color);
+  }
+
+  .portfolio h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .portfolio-box {
+    border-radius: 2rem;
+    padding: 1.4rem;
+  }
+
+  .portfolio-info h4 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .portfolio-info p {
+    font-size: 1.4rem;
+  }
+
+  /* Contact */
+  .contact {
+    background-color: var(--second-bg-color);
+  }
+
+  .contact h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 1.4rem;
+    border: 1px solid var(--main-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    background-color: var(--bg-color);
+    padding: 1.6rem 0 2rem;
+  }
+
+  .footer .copyright {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+/* Tablets: mantengo tu diseño anterior 600–1024px */
 @media (min-width: 600px) and (max-width: 1024px) {
-  
   * {
     margin: 0;
     padding: 0;
@@ -69,12 +321,12 @@
     font-size: 2rem;
     color: var(--text-color);
   }
-
+ 
   .nav-links {
     display: flex;
     gap: 2rem;
   }
-
+ 
   .nav-links a {
     color: var(--text-color);
     text-decoration: none;
@@ -84,13 +336,13 @@
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
   }
-
+ 
   .nav-links a:hover {
     color: var(--main-color);
     transform: scale(1.1);
     border-bottom: 3px solid var(--main-color);
   }
-
+ 
   .home {
     display: flex;
     align-items: center;
@@ -98,32 +350,32 @@
     gap: 6rem;
     flex-direction: column;
   }
-
+ 
   .home-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
   }
-
+ 
   .home-content h1 {
     font-size: 8rem;
     font-weight: 700;
     margin-top: 0.5rem;
     line-height: 1;
   }
-
+ 
   .home-content h3 {
     font-size: 5rem;
     margin: 1rem 0;
   }
-
+ 
   .home-content p {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.8;
   }
-
+ 
   .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -136,12 +388,12 @@
     color: var(--main-color);
     margin: 2rem 0.5rem;
   }
-
+ 
   .btn-group {
     display: flex;
     gap: 1.5rem;
   }
-
+ 
   .btn {
     display: inline-block;
     margin-top: 4%;
@@ -155,7 +407,7 @@
     font-weight: 600;
     transition: 0.3s ease-in-out;
   }
-
+ 
   .btn-group a:nth-of-type(2) {
     background-color: black;
     color: var(--main-color);
@@ -176,7 +428,7 @@
     justify-content: center;
     gap: 6rem;
   }
-
+ 
   .about-content {
     display: flex;
     flex-direction: column;
@@ -189,19 +441,19 @@
     text-align: center;
     margin: 3rem 0;
   }
-
+ 
   .about-content p {
     font-size: 2.0rem;
     font-weight: 500;
     line-height: 2.0;
   }
-
+ 
   .about img {
     width: 32vw;
     border-radius: 10%;
     box-shadow: 0 0 12px var(--main-color);
   }
-
+ 
   .portfolio {
     display: flex;
     flex-direction: column;
@@ -210,7 +462,7 @@
     background-color: var(--bg-color);
     color: black; 
   }
-
+ 
   .portfolio h2 {
     font-size: 7rem;
     margin: 2%;
@@ -227,7 +479,7 @@
     width: 400px;
     height: 640px;
   }
-
+ 
   .portfolio-box {
     display: flex;
     justify-content: center;
@@ -237,34 +489,34 @@
     border-radius: 3rem;
     
   }
-
+ 
   .portfolio-info {
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 1rem;
   }
-
+ 
   .portfolio-info i {
     font-size: 5rem;
   }
-
+ 
   .portfolio-info h4 {
     font-size: 4rem;
     margin: 1rem 0;
     font-weight: 800;
   }
-
+ 
   .portfolio-info p {
     font-size: 2.0rem;
     font-weight: 600;
     line-height: 1.7;
   }
-
+ 
   .contact {
     background-color: var(--second-bg-color);
   }
-
+ 
   .contact h2 {
     text-align: center;
     font-size: 32px;
@@ -280,7 +532,7 @@
     margin: 4rem 0;
     text-align: center;
   }
-
+ 
   .contact form .input-box input, .contact form textarea {
     width: 100%;
     padding: 1.5rem;
@@ -292,11 +544,11 @@
     margin: 1.5rem 0;
     resize: none;
   }
-
+ 
   .footer {
     background-color: var(--bg-color);
   }
-
+ 
   .footer .copyright {
     text-align: center;
     font-size: 16px;

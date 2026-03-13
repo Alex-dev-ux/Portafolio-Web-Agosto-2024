@@ -18,6 +18,7 @@
     --second-bg-color: #000c10;
     --text-color: white;
     --main-color: #0ec3f0;
+    --header-height: 6.8rem;
   }
 
   html {
@@ -28,12 +29,28 @@
   body {
     background: var(--bg-color);
     color: var(--text-color);
-    padding-top: 5rem;
+    padding-top: calc(var(--header-height) + 3.4rem);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .layout > main {
+    width: 100%;
+    max-width: 420px;
   }
 
   section {
     min-height: auto;
-    padding: 6rem 2rem 4rem;
+    padding: 4rem 1.6rem 4rem;
+    scroll-margin-top: calc(var(--header-height) + 1.2rem);
   }
 
   span {
@@ -47,6 +64,7 @@
     right: 0;
     z-index: 1000;
     width: 100%;
+    min-height: var(--header-height);
     padding: 0.8rem 1.6rem;
     display: flex;
     align-items: center;
@@ -105,12 +123,12 @@
   .home-content p {
     font-size: 1.5rem;
     line-height: 1.7;
-    max-width: 32rem;
+    max-width: 26rem;
   }
 
   .home-img img {
-    width: 60vw;
-    max-width: 260px;
+    width: 48vw;
+    max-width: 220px;
     border-radius: 14%;
     box-shadow: 0 0 18px var(--main-color);
   }
@@ -163,8 +181,8 @@
   }
 
   .about img {
-    width: 60vw;
-    max-width: 260px;
+    width: 48vw;
+    max-width: 220px;
     border-radius: 14%;
     box-shadow: 0 0 16px var(--main-color);
   }
@@ -176,7 +194,15 @@
 
   .about-content p {
     font-size: 1.5rem;
-    line-height: 1.7;
+    line-height: 1.85;
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-content .btn {
+    margin-top: 1.2rem;
   }
 
   /* Portfolio */
@@ -242,7 +268,8 @@
 
   .footer {
     background-color: var(--bg-color);
-    padding: 1.6rem 0 2rem;
+    padding: 1.6rem 0 calc(2rem + env(safe-area-inset-bottom));
+    margin-top: auto;
   }
 
   .footer .copyright {
@@ -274,16 +301,19 @@
     --second-bg-color: #000c10;
     --text-color: white;
     --main-color: #0ec3f0;
+    --header-height: 7.2rem;
    }
   
    body {
     background: var(--bg-color);
     color: var(--text-color);
+    padding-top: calc(var(--header-height) + 1.6rem);
    }
   
   section {
   min-height: 92vh;
     padding: 10rem 12%;
+    scroll-margin-top: calc(var(--header-height) + 1.6rem);
   }
   
   span {
@@ -302,6 +332,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-height: var(--header-height);
     padding: 1rem 2rem;
     background-color: var(--bg-color);
     position: fixed;

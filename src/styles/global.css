@@ -31,7 +31,7 @@ html {
  }
 
 section {
-min-height: 100vh;
+  min-height: 92vh;
   padding: 10rem 12%;
 }
 
@@ -131,7 +131,7 @@ header {
   }
 
   .home-content h3 {
-    font-size: 3rem;
+    font-size: 3.4rem;
     margin: 1rem 0;
   }
 
@@ -227,7 +227,7 @@ header {
   }
 
   .about-content h2 {
-    font-size: 7rem;
+    font-size: 7.4rem;
     text-align: left;
   }
 
@@ -254,13 +254,14 @@ header {
 
   .heading {
     text-align: center;
-    font-size: 5rem;
+    font-size: 5.4rem;
     margin: 3rem 0;
   }
 
   .portfolio {
     background-color: var(--bg-color);
     color: black;
+    margin-top: 0px;
     margin-top: 0px;
     margin-top: 0px;
     padding-bottom: 72px;
@@ -277,6 +278,7 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 12rem;
   }
 
   .portfolio-box {
@@ -309,18 +311,23 @@ header {
 
   .portfolio-info i {
     font-size: 3rem;
+    margin-top: 1.2rem;
   }
 
   .portfolio-info h4 {
-    font-size: 4rem;
+    font-size: 4.4rem;
     margin: 1rem 0;
     font-weight: 800;
   }
 
   .portfolio-info p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.7;
+  }
+
+  .portfolio-icons {
+    margin-top: 2rem;
   }
 
   .contact {
@@ -329,7 +336,7 @@ header {
 
   .contact h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 2rem;
     color: var(--text-color);
   }
